@@ -6,6 +6,21 @@ env:
 language: ruby
 rvm:
   - 2.0.0-p648
+bundler_args: "--without production"
+addons:
+  postgresql: '9.3'
+services:
+  - postgresql
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
+script:
+  - bundle exec rspec
+notifications:
+  email:
+    on_success: always
+    on_failure: always
 after_success:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - export REPO=CarolinaSantana/sample_app_rails_4-1
