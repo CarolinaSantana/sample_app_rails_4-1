@@ -21,6 +21,9 @@ notifications:
   email:
     on_success: always
     on_failure: always
+sudo: required
+services:
+  - docker
 after_success:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - export REPO=CarolinaSantana/sample_app_rails_4-1
