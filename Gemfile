@@ -13,6 +13,7 @@ gem 'pg', '0.15.1'
 gem 'puma'
 
 group :development, :test do
+  gem 'travis'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.
   gem 'guard-rspec', '2.5.0'
