@@ -25,13 +25,10 @@ sudo: required
 services:
   - docker
 after_success:
-- if [ "$TRAVIS_BRANCH" == "master" ]; then
-  docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  export REPO=carolina/sample_app_rails_4-1
-  docker build -f Dockerfile -t $REPO:$COMMIT .
-  docker tag $REPO:$COMMIT $REPO:latest
-  docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
-  docker push $REPO
-  fi
-  
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  - export REPO=carolina/sample_app_rails_4-1
+  - docker build -f Dockerfile -t $REPO:$COMMIT .
+  - docker tag $REPO:$COMMIT $REPO:latest
+  - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
+  - docker push $REPO  
 
