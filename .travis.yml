@@ -26,7 +26,7 @@ services:
   - docker
 after_success:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - export REPO=carolina/sample_app_rails_4-1
+  - export REPO=carolina/sample_app_rails_4_image
   - docker build -f Dockerfile -t $REPO:$COMMIT .
   - docker tag $REPO:$COMMIT $REPO:latest
   - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
