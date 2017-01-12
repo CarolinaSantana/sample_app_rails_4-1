@@ -1,31 +1,33 @@
 env:
   global:
-  - secure: ZWL0gmTN8sYolHJHNvTmrpEEq+gmFcBNXd0EJjmZy9gp8dECKRRwtJg5cmpCtp7qFmnz0oi01HaP+2+uB6WTtupLZBL+XEXOc43zw+GWKMzyH5DzudmaJXmDt6plA2DmjiBYkqbEonG4PGVek6ktZQivbObBTMlFVFUfLI8xFggnP2nH+FPjVl3RzeiFn5NfSMRyV10Dn8BKCg4Ba/HogLVjh8kvBa31sxpKLKnUxmxyI9ClxlW0KMcvFItf3iKDDaJxh4hFL7Kdug0kTGRSU4sK90bzU8QRkIdmtiu2vxYS5UOstyO+xhW5Vo4vZT8m0zU78mWQoq38VVvaBCWiEvpWor2Kd6sGOjU5TQDfteY3Clmsx1OhelCwNSfBXk7PN0UdD6XBhw6grMRzAAemGUnKCrbTzuxxnj/QDycJ4IoNpZ7A1xPAieZh0mbVQyqR8GjHHZgh3gY2ukqz61g7jV8/5erDc5V9T0fTLPCUqnNCNLnHRxcY84b/x1DGMsepLOQPeO6aRUXyA9nDUscmCpGyHuj8nPWZyHmrQQM9qpLoGOAlSoR65tVo8N44qUs9T2zc8TrHDKeAofjZGm6iqIT4BFuk1/A6IGSAWQ2mXekx3p4Xd+uahe1bAbRPUp0vAtpjE/5dlqPYmNBxUPTrbv8/U6Z2YSAb/OvL0HdRl2o=
-  - secure: fCWM2puC12/rOxP6gHcVn9ZW7hympS/Jnq22GdKxamtWi38juflIgeM16FJJP7Td/5XSH+gRomKFEbvTcIU4zijQHhm75gQu2BkaAPe57GcB9EuOIEW3oaTbi/ymOnJ4nOPMnFwP8oKvYcC2a9MDc95femJ8eIwoWHfpm851BABaT89KNkfIGR6sfzD8ShY8NKcnhMI4laNzXylRNV1fjnsbf8nBKfS/vHVz7X6wx/gR4IMXPNaccOhagKy80sIDhuAoRkh6K9w+muJE5I2SlXStWdvEkDUVml9cinh5Kbk+zghleyUIUl6w3cbu7VZ9JXsCUakwSY4PbLO7rpmtVCB87TyGkcfSfDeHTBFPTvNgdMWeH0fpWvIRzludnd55i/nDPdDcR2gBKvoJp2sZ8ASmHhqrLWYwzrw0zzEsvmIaF/sPO9B70K0dBjWuDSv6cA9n3WcPkAGpuUgq8+y/xfDogRhjME8MZK0CzGxbvs0IOIwSRWYlD54Tf11sFvww/pIA9m0CpSIXSaze5rzn+VQQezaD6pbETgB+yejFTiz2IgBTgXVoflP0PIrd7yAabNExkDaGwfq9kfctgiISxIsDvpfuoBhdx4lvPIDn87bCboxgawyGkPCFp0FzGK6GtXQguKZHw+FWafCeHDcxMN2f0oAkmM6EYbP+8VkRdPw=
+  - secure: V6nnYM6F20NLGuH2t86r8zhkXdOd1yxDcQVqzLruFa+Ze35Y94dm/sgQWVW6IhoYOZJ1/TU0Nfjpj9LcKyphRvQyfhPEmluLGl0NGojaUhYCcq9RK4AfewM5Anu+RHJBoMFWaqgaUxpevymBDN98eaNKLuBE3ALv/z/egr9uqxW3FvuZyWqLU6FTGP2F1AGqEhk5xSjmDTHTByrWFbayal4n0M3Nask9yXDR/yOwgPkmSeqkBpyMG3RtXUadzTQ4KzjaTSQpgQM5KVq9Bjx4Tt3bAkTVUkxB5LHgiWYKmTDGY5mDZ6rGnUNyUbGP+hc0GyHLkupZArwytuSFrTOxQF7cwitMbrApt8GMv4jMwWLSpZ4k4iDP0kXBgtO3bQN0WiBH8oiqdW5DLQt5bVCC0eAqzT1qB19GZazZrIYxS1JFTYJmygV3n1khueATGOh9GqIrVQrOZ18uDwtqL647VhXWUqoEiOKhag/S3D03DzhJ1a2xXhixRIY75dODdSP2waq1pyNZoRG92dTNAXLxgwqtAeNBqn8Bgx5vEJEArCUXZzoLFblrBprlTXw1kqwxMCXVHYYlXjyFWrkhxs8siy2C2pIkSxGlmG9aBK1ZHcVeAuHhidXBv0TaUquZUkOTiznJJEKk2cSxtzhBtiIofDesRJQVbqGgvgMg4x1OosA=
+  - secure: 2oPkOFIRUEgNdxhL3qR0FxmjePplPQNK+bpkdl80yBj2g8x67EpC7go9QOWpjZeii2UyZgIYewCHMvsJe6RSx1W4x1Pe1231kN01G4z3K4uZP9a7RXAPZSBg5p/JSVJM67gcZ7Zsyu+xCDVaAI7KDywhVMciIErovECz+RF1OqIdZm12ESFHW0hBfSgzfAjPfoOd1iQVhE/DG32U03SHvUWBzPePS1K9kkB3KnUs17NV4Qw/n3Bl6e7YJYCVQJQFr3l1sn9L1u3uvKuqwWZWv09HAu0F9iiE7yX6ey8uqQthmPgWI7iU29gwwXKGh5xLIwAF1vNjm//n+0XhTzyAliNIqdAyDQDUi0JRKfHs/qvfTPIVWkUXCwNvGvrCnTed6hLRgYTezHSCu7gxATS/dlV7AanL0zrNk4CVeB0ZX60y19/azsD+aQoidcdpplTisYglRJSZoykdMJPNE8NL7O7tmIISl5/1iFaxN5qVeSXWO2gP6dOBHD6n+1b0yw/7kix1PGD3YCqYL4Kskaq2h/w6JY6bQ2qYK692fIGyOKyHu4kFTnnW0QnLJE0QN4SfkCXREm6Qsnt7t7q81vudpiGFZEVi8PhlzCT4iyjAiZul7nR7RLwt1PSCnzwJajfzPDX6lrXGqTQro41YzhgRZdLF6+KMIB+Wz47Iy6Xtik0=
   - COMMIT=${TRAVIS_COMMIT::8}
 language: ruby
 rvm:
-- 2.0.0-p648
-bundler_args: --without production
+  - 2.0.0-p648
+bundler_args: "--without production"
 addons:
   postgresql: '9.3'
 services:
-- docker
+  - postgresql
 before_script:
-- cp config/database.yml.travis config/database.yml
-- psql -c 'create database travis_ci_test;' -U postgres
-- RAILS_ENV=test bundle exec rake db:migrate --trace
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
 script:
-- bundle exec rspec
+  - bundle exec rspec
 notifications:
   email:
     on_success: always
     on_failure: always
 sudo: required
+services:
+  - docker
 after_success:
-- docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-- export REPO=carolina/app
-- docker build -f Dockerfile -t $REPO:$COMMIT .
-- docker tag $REPO:$COMMIT $REPO:latest
-- docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
-- docker push $REPO
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  - export REPO=carolina/sample_app_rails_4_image
+  - docker build -f Dockerfile -t $REPO:$COMMIT .
+  - docker tag $REPO:$COMMIT $REPO:latest
+  - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
+  - docker push $REPO  
