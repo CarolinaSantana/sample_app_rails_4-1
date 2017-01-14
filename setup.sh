@@ -9,16 +9,16 @@ done
 echo "PostgreSQL started"
 
 echo "Creating databases..."
-rake db:create & wait $!
+rake db:create
 
 echo "Migrating to databases..."
-rake db:migrate & wait $!
+rake db:migrate
 
 echo "Seeding databases..."
-rake db:seed & wait $!
+rake db:seed
 
 echo "Populating databases..."
-rake db:populate & wait $!
+rake db:populate
 
 echo "Ready databases"
 
