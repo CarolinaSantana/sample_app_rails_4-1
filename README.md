@@ -40,3 +40,11 @@ First, to get this you need to export the PostgreSQL user and password environme
 Then, you can do the deployment of the discussed infraestructure by running the following script:
 
     ./docker-microservices.sh
+    
+## Adapting sample application to continuos Integration and Deploy with TRAVIS CI
+
+The main idea is deploy the next structure, automatically:
+ 
+![alt tag](https://github.com/carmelocuenca/csantana_project/blob/master/tfm_doc/images/figures/iteration2.png?raw=true)
+
+Every time there is a change with a *commit* and you upload it, *push*, to the repository the integration takes place. In order to integrate and consolidate the changes automatically the new image of the repository is built and pulled to Docker Hub.
