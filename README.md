@@ -41,7 +41,7 @@ Then, you can do the deployment of the discussed infraestructure by running the 
 
     ./docker-microservices.sh
     
-## Adapting sample application to continuos Integration and Deploy with TRAVIS CI
+## Adapting sample application to continuos Integration and Deploy with Travis CI
 
 The main idea is deploy the next structure, automatically:
  
