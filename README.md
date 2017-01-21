@@ -23,3 +23,20 @@ Click on the button below to get started:
 
 [![Hack railstutorial/sample_app_rails_4 on
 Nitrous.IO](https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f6045e1949af9d96095b.png)](https://www.nitrous.io/hack_button?source=embed&runtime=rails&repo=railstutorial%2Fsample_app_rails_4&file_to_open=README.nitrous.md)
+
+## Adapting sample application to a service model implemented with Docker containers
+
+The main idea is deploy the next structure:
+
+![alt tag](https://github.com/carmelocuenca/csantana_project/tfm_doc/images/figures/iteration1.png)
+
+From this repository, the Docker image of the application, *sample_app_rails_4_image*, is built. Then, the Docker container, *some-postgres*, that refers to the database is created. The Docker volume, *volume-public*, allows you to have a shared space between the application Docker container and the *some-nginx* Docker container, that represent the web proxy. Thus, the container of the application is composed of a first executable Docker container, *app-job*, that creates, migrates and populates the database and for other Docker container, *app-task*, that will be running with the web server puma launched.
+
+
+First, to get this you need to export the PostgreSQL user and password environment variables to the main directory:
+
+    . ~/.postgres/credentials
+
+Then, you can do the deployment of the discussed infraestructure by running the following script:
+
+    ./docker-microservices.sh
