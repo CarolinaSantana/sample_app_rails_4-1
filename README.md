@@ -28,7 +28,7 @@ Nitrous.IO](https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f
 
 The main idea is deploy the next structure, automatically:
  
-![Alt text](csantana_project/tfm_doc/images/figures/iteration1.png "Conversión de una aplicación Ruby on Rails a una arquitectura de microservicios")
+![Alt text](csantana_project/tfm_doc/images/figures/iteration1.png?raw=true "Conversión de una aplicación Ruby on Rails a una arquitectura de microservicios")
 ![alt tag](https://github.com/carmelocuenca/csantana_project/tfm_doc/images/figures/iteration1.png)
 
 From this repository, the Docker image of the application, *sample_app_rails_4_image*, is built. Then, the Docker container, *some-postgres*, that refers to the database is created. The Docker volume, *volume-public*, allows you to have a shared space between the application Docker container and the *some-nginx* Docker container, that represent the web proxy. Thus, the container of the application is composed of a first executable Docker container, *app-job*, that creates, migrates and populates the database and for other Docker container, *app-task*, that will be running with the web server puma launched.
