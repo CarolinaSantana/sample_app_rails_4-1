@@ -26,9 +26,9 @@ Nitrous.IO](https://d3o0mnbgv6k92a.cloudfront.net/assets/hack-l-v1-3cc067e71372f
 
 ## Adapting sample application to a service model implemented with Docker containers
 
-The main idea is deploy the next structure:
-
-![alt tag](https://github.com/carmelocuenca/csantana_project/tfm_doc/images/figures/iteration1.png)
+The main idea is deploy the next structure, automatically:
+ 
+![alt tag](https://github.com/carmelocuenca/csantana_project/blob/master/tfm_doc/images/figures/iteration1.png?raw=true)
 
 From this repository, the Docker image of the application, *sample_app_rails_4_image*, is built. Then, the Docker container, *some-postgres*, that refers to the database is created. The Docker volume, *volume-public*, allows you to have a shared space between the application Docker container and the *some-nginx* Docker container, that represent the web proxy. Thus, the container of the application is composed of a first executable Docker container, *app-job*, that creates, migrates and populates the database and for other Docker container, *app-task*, that will be running with the web server puma launched.
 
@@ -40,3 +40,12 @@ First, to get this you need to export the PostgreSQL user and password environme
 Then, you can do the deployment of the discussed infraestructure by running the following script:
 
     ./docker-microservices.sh
+    
+## Adapting sample application to continuos Integration and Deploy with Travis CI
+
+The main idea is deploy the next structure, automatically:
+ 
+![alt tag](https://github.com/carmelocuenca/csantana_project/blob/master/tfm_doc/images/figures/iteration2.png?raw=true)
+
+Every time there is a change with a *commit* and you upload it, *push*, to the repository the integration takes place. In order to integrate and consolidate the changes automatically the new image of the repository is built and pulled to Docker Hub.
+
