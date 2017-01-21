@@ -35,17 +35,25 @@ From this repository, the Docker image of the application, *sample_app_rails_4_i
 
 First, to get this you need to export the PostgreSQL user and password environment variables to the main directory:
 
-    . ~/.postgres/credentials
+    $ . ~/.postgres/credentials
 
 Then, you can do the deployment of the discussed infraestructure by running the following script:
 
-    ./docker-microservices.sh
+    $ ./docker-microservices.sh
     
 ## Adapting sample application to continuos Integration and Deploy with Travis CI
 
 The main idea is deploy the next structure, automatically:
  
 ![alt tag](https://github.com/carmelocuenca/csantana_project/blob/master/tfm_doc/images/figures/iteration2.png?raw=true)
+
+First you need to create an account, unless you already have it.
+
+Then you can use the travis configuration example and add your encrypted credentials:
+
+    $ cp .travis.yml.sample .travis.yml
+    travis encrypt DOCKER_USERNAME=************ --add
+    travis encrypt DOCKER_PASSWORD=************ --add
 
 Every time there is a change with a *commit* and you upload it, *push*, to the repository the integration takes place. In order to integrate and consolidate the changes automatically the new image of the repository is built and pulled to Docker Hub.
 

@@ -5,29 +5,27 @@ env:
   - COMMIT=${TRAVIS_COMMIT::8}
 language: ruby
 rvm:
-  - 2.0.0-p648
-bundler_args: "--without production"
+- 2.0.0-p648
+bundler_args: --without production
 addons:
   postgresql: '9.3'
 services:
-  - postgresql
+- docker
 before_script:
-  - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database travis_ci_test;' -U postgres
-  - RAILS_ENV=test bundle exec rake db:migrate --trace
+- cp config/database.yml.travis config/database.yml
+- psql -c 'create database travis_ci_test;' -U postgres
+- RAILS_ENV=test bundle exec rake db:migrate --trace
 script:
-  - bundle exec rspec
+- bundle exec rspec
 notifications:
   email:
     on_success: always
     on_failure: always
 sudo: required
-services:
-  - docker
 after_success:
-  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - export REPO=carolina/sample_app_rails_4_image
-  - docker build -f Dockerfile -t $REPO:$COMMIT .
-  - docker tag $REPO:$COMMIT $REPO:latest
-  - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
-  - docker push $REPO  
+- docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+- export REPO=carolina/sample_app_rails_4_image
+- docker build -f Dockerfile -t $REPO:$COMMIT .
+- docker tag $REPO:$COMMIT $REPO:latest
+- docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
+- docker push $REPO
