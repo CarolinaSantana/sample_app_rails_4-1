@@ -52,8 +52,10 @@ First you need to create an account, unless you already have it.
 Then you can use the travis configuration example and add your encrypted credentials:
 
     $ cp .travis.yml.sample .travis.yml
-    travis encrypt DOCKER_USERNAME=************ --add
-    travis encrypt DOCKER_PASSWORD=************ --add
+    $ travis encrypt DOCKER_USERNAME=************ --add
+    $ travis encrypt DOCKER_PASSWORD=************ --add
+
+You can also specify the email in which you want to receive failure or success messages about the pull in *recipients*.
 
 Every time there is a change with a *commit* and you upload it, *push*, to the repository the integration takes place. In order to integrate and consolidate the changes automatically the new image of the repository is built and pulled to Docker Hub.
 
