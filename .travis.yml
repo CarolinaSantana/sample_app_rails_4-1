@@ -1,31 +1,34 @@
 env:
   global:
-  - secure: V6nnYM6F20NLGuH2t86r8zhkXdOd1yxDcQVqzLruFa+Ze35Y94dm/sgQWVW6IhoYOZJ1/TU0Nfjpj9LcKyphRvQyfhPEmluLGl0NGojaUhYCcq9RK4AfewM5Anu+RHJBoMFWaqgaUxpevymBDN98eaNKLuBE3ALv/z/egr9uqxW3FvuZyWqLU6FTGP2F1AGqEhk5xSjmDTHTByrWFbayal4n0M3Nask9yXDR/yOwgPkmSeqkBpyMG3RtXUadzTQ4KzjaTSQpgQM5KVq9Bjx4Tt3bAkTVUkxB5LHgiWYKmTDGY5mDZ6rGnUNyUbGP+hc0GyHLkupZArwytuSFrTOxQF7cwitMbrApt8GMv4jMwWLSpZ4k4iDP0kXBgtO3bQN0WiBH8oiqdW5DLQt5bVCC0eAqzT1qB19GZazZrIYxS1JFTYJmygV3n1khueATGOh9GqIrVQrOZ18uDwtqL647VhXWUqoEiOKhag/S3D03DzhJ1a2xXhixRIY75dODdSP2waq1pyNZoRG92dTNAXLxgwqtAeNBqn8Bgx5vEJEArCUXZzoLFblrBprlTXw1kqwxMCXVHYYlXjyFWrkhxs8siy2C2pIkSxGlmG9aBK1ZHcVeAuHhidXBv0TaUquZUkOTiznJJEKk2cSxtzhBtiIofDesRJQVbqGgvgMg4x1OosA=
-  - secure: 2oPkOFIRUEgNdxhL3qR0FxmjePplPQNK+bpkdl80yBj2g8x67EpC7go9QOWpjZeii2UyZgIYewCHMvsJe6RSx1W4x1Pe1231kN01G4z3K4uZP9a7RXAPZSBg5p/JSVJM67gcZ7Zsyu+xCDVaAI7KDywhVMciIErovECz+RF1OqIdZm12ESFHW0hBfSgzfAjPfoOd1iQVhE/DG32U03SHvUWBzPePS1K9kkB3KnUs17NV4Qw/n3Bl6e7YJYCVQJQFr3l1sn9L1u3uvKuqwWZWv09HAu0F9iiE7yX6ey8uqQthmPgWI7iU29gwwXKGh5xLIwAF1vNjm//n+0XhTzyAliNIqdAyDQDUi0JRKfHs/qvfTPIVWkUXCwNvGvrCnTed6hLRgYTezHSCu7gxATS/dlV7AanL0zrNk4CVeB0ZX60y19/azsD+aQoidcdpplTisYglRJSZoykdMJPNE8NL7O7tmIISl5/1iFaxN5qVeSXWO2gP6dOBHD6n+1b0yw/7kix1PGD3YCqYL4Kskaq2h/w6JY6bQ2qYK692fIGyOKyHu4kFTnnW0QnLJE0QN4SfkCXREm6Qsnt7t7q81vudpiGFZEVi8PhlzCT4iyjAiZul7nR7RLwt1PSCnzwJajfzPDX6lrXGqTQro41YzhgRZdLF6+KMIB+Wz47Iy6Xtik0=
+  - secure: ktOlr34oWsjwWtppX8QEnkjWV0IyMOlTKE3dcEajAIpcIRhJyyTc1dhemJMLjBXWKSEGo8vyrowaMukN1Pxv1QHTv4PlUxI/wq39drAHQQ6g7tcLYnfTC9js/thV4URIS/Mpz00KzdKS3EZN7Uto0uU0/ytmF+sCHTxZxwVQoT9TIMhf3yjgPeZoPXJd+PuGO1cVyb2lETNMaIAV/fcl1zik73M2YpP+sjkoltMHOCd45YwV+c0ANfgjxM7camTE9ImKhSSHHSSepawlCHMig/xl+f0V5U+fe2klr/8K/6JrBJ1bJ52CJiVzMqGi3eiINQI64BjhAAq1zDwd4hiXRWOX/bE1eVZOv5lZ9hlYwXrQsADRL5MX5lVC3d4Ch0tCNNz9nKBoLEci2y0y3xkL+wWOv4hwxTELaqRjgGPL67SeoswkdEy9FUWsbOlRMPztxN/xhLj7avfoudxItmzpKgzVWiWcCgFLmZQGUYGDJa1hXz/PSuc+2Ra9TOVytONEQZC+AqNm3BjO3aOu1UFaV3vIOgdy6MHK+mIeQqgxhyUY+MkPm5H6CNe00loM9ouIpllto+PpVDzJ2oZdhBLxq+ZjYIqjsqcqJbHpoWGsZqrPIZezfH0HyNk95y2lv7MiInptDq6UViuRZpEcrBVlZ60mvm+E7cGBF7UrlSDQ97w=
+  - secure: MlPh2uOYJixxPtSiMeg2BqITa5CSyTwgoU5kNRteXEdodrmNFq+qzpT+G9pswjo+4IgOh0q50dymPRKNCZC4uc+EDnbrQOs59f04wP0TGfqRuliuBfUBSU7TxdfHoOhrsjH2t9DCsDC0vHPqizJqyy9yWHyNLIXmyNERmDrDrzRe+G08KPasWWS56CGKSKih0a78QogVg/f1uUEPt2Gx24J9unJeIJhGcmYllyEL2RghzL2XitgeAm8YD3RKsZzT3dPOhXaKyVnSqBVP1SeBNyouwwyZmeLn6gVg52Wu+JdByXSfgMg80Ot25H121DGrfDAbhwUo91+gmgd9mIMYcJIYdDv1zQi9TwpiUd0SVTvnDazYowtn6SaZcBfyLNVJlJfyPIZrQstvws5Lc2uwPXR09n//WdLu5BQ1YT7W/2OtcxbxOvt3PkwOs4BA0YphGI+Dv+Tx9Ay50JJJ9EwMUKCHMN5mfVK59ETwoBKHEuHXNrinSqtM1wqJFX+vRLRDecKY4a8d7RfdbsCFWBshifF8BS8HA0EAtJH/mouUny0Em8k+eNpz+5ZhEJWJ5qB4vmXZcppDxrapLkxbJW/Fo/T4cy4ClKfqgfAvh+8eOVzEpFP/VpU3NhJrT7REqcuP5yCfRICLBoMIxE809C8Tec7m49yIecGFmypaDG2zUOc=
   - COMMIT=${TRAVIS_COMMIT::8}
 language: ruby
 rvm:
-- 2.0.0-p648
+  - 2.0.0-p648
 bundler_args: --without production
 addons:
   postgresql: '9.3'
 services:
-- docker
+  - docker
 before_script:
-- cp config/database.yml.travis config/database.yml
-- psql -c 'create database travis_ci_test;' -U postgres
-- RAILS_ENV=test bundle exec rake db:migrate --trace
+  - cp config/database.yml.travis config/database.yml
+#  - psql -c 'create database travis_ci_test;' -U postgres
+  - RAILS_ENV=test bundle exec rake db:migrate --trace
 script:
-- bundle exec rspec
+  - bundle exec rspec
 notifications:
   email:
+    recipients:
+      - c.santanamartel@gmail.com
     on_success: always
     on_failure: always
 sudo: required
 after_success:
-- docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-- export REPO=carolina/sample_app_rails_4_image
-- docker build -f Dockerfile -t $REPO:$COMMIT .
-- docker tag $REPO:$COMMIT $REPO:latest
-- docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
-- docker push $REPO
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  - export REPO=carolina/sample_app_rails_4_image
+  - docker build -f Dockerfile -t $REPO:$COMMIT .
+  - docker tag $REPO:$COMMIT $REPO:latest
+  - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
+  - docker push $REPO
+
