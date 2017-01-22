@@ -20,5 +20,5 @@ doc/
 .rvmrc
 .ruby-*
 .secret
-.travis.yml
+#.travis.yml
 
