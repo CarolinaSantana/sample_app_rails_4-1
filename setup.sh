@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cp config/database.yml.postgres config/database.yml
+cp config/database.yml.postgresql config/database.yml
 
 echo "Waiting PostgreSQL to start on 5432..."
 
