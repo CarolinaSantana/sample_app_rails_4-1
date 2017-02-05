@@ -10,7 +10,6 @@
 /tmp
 
 # Ignore other unneeded files.
-database.yml
 doc/
 *.swp
 *~
@@ -20,5 +19,5 @@ doc/
 .rvmrc
 .ruby-*
 .secret
-#.travis.yml
+
 
