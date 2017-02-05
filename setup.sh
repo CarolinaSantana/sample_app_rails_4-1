@@ -1,7 +1,5 @@
 #!/bin/sh
 
-cp config/database.yml.postgresql config/database.yml
-
 echo "Waiting PostgreSQL to start on 5432..."
 
 while ! nc -z some-postgres 5432; do
