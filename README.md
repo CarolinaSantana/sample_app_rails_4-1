@@ -49,11 +49,10 @@ The main idea is deploy the next structure, automatically:
 
 First you need to create an account, unless you already have it.
 
-Then you can use the travis configuration example and add your encrypted credentials:
+Then you can use the .travis.yml configuration adding your credentials locally:
 
-    $ cp .travis.yml.sample .travis.yml
-    $ travis encrypt DOCKER_USERNAME=************ --add
-    $ travis encrypt DOCKER_PASSWORD=************ --add
+    $ travis env set DOCKER_USERNAME *yourusername*
+    $ travis env set DOCKER_PASSWORD *yourpassword*
 
 You can also specify the email in which you want to receive failure or success messages about the pull in *recipients*.
 
