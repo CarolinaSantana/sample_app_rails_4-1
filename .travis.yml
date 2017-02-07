@@ -1,7 +1,7 @@
 env:
   global:
-  - secure: jlO9r9WyY8+uA/9JHMiklMQhIUZgNu9UhNQugmG8f4QkwAbD39N4Nbvf/aIuK/Il0ZbQHekJU8VE4TKOrKGxCw2jpLJ+H9yUXlhYZncg0S9399lMvOVmILUwEUjSKYHY/kwf6PAxKB7FSwTVlWIduA0MZjmpxLvPlHhFB5R0aKNPI4/SvGj2Cdho3ZIf8nXZei9IGFRwP94iYLFjXSf5STsRsOPhublkZYDzYq/a3m/bKtaZRD9ulxQxUhjSk7fHqFjMGPeHAQOEnBzN5+wJsDAi/SitJ/1JIbmIfPrvXW4V96bcaKfifPlTgyItp1WNzeXwyLecaGCH+QbDytcsCwP2HlfDAqHdjrig81QUcmOvJEIg/fQqklQ0XPsbA8TtVGmz4JCtBRw2uTmlhgVurDy3cUpd4EgBJ74uFWpRhFg3Slm0Z2SxFwS+VwTMfl2YL2GdKbYd47xA1yuD+gp94C+YXspnPAMl65H5nmpNSffQ3cUFDUWq5t/frihtM6H1kSzs4ynF1ZtqL0Z5h4RoNmI1xrMLwKliuWnoUe5p12XiSoXusgeWMlOuojulUcHqeH39RqoFcVpFdL7veRdtvu38G2guL/GZjt2wlUKEV4r/g7UEa4rRh+YBd/GMRfQTb2fzil3PvemoP6JNJ7xd9DCuxSbrhf1dp7lYNIA+XIY=
-  - secure: vJXFxz8NVjx0NAKcaBAMMad6ch6yRMjzGT/z40LUrdarOnTq6BmJ84Wo/JAbsXIutnpDr0W1N3dOsvJtRADFhsyj/pgcpCDgS3S91vw3evAs93uTrBJ8qNoxSVdhXwyb2DMC6PzADWW8ADhAv+yd9sybPJVTNP/MGXM/1ZgHQvs7EYWMs2GGkBidC0NYtoFHAuiGcPaWh81QYVZ9mtQqWSOMFnczrOwUgBrPUoI5quk9YJCHBY+v9SUNGay8ZgRKdBhKPm8NJNs7kjdHl/Feen4dw3cTDsvwCgluixK6NTSiAHkwLexrI4HiEbRnWYWK7kRgGnWKyaJjD3vCkDp+DAfHV1/Q1Hih0ga920i+7GqQHbGiWk+JsptI234hkkAfIZxT4ojr7neGMbIeVscEUw//l1WhgvL/nIDxJFBDyJku0u1EJIpd+dBw1SiLSSO/DC6tqm8ZxgIPNmgu3n+ZZfgdmVPfwhTqCAgVKhfipJh04xqj4jlR+G6iu8L4f44tdrPF47H4+d6x8bcfxYfVRa0Xp9J+cZXe6TP1by6BuiJltig07EaYzQlFntRaACBWbOx8K4T4LdhzWck33wwucUzvVJs+yWu8XELnh5fO+yY9b+qI/1JXbtZGmuX8TSfT1Qdj3ds7xCWDqGkSvtYCpiL4f+9Sl0kHw/VkMUtnG6c=
+  - DOCKER_USERNAME=<%= ENV['DOCKER_USER'] %>
+  - DOCKER_PASSWORD=<%= ENV['DOCKER_PASS'] %>
   - COMMIT=${TRAVIS_COMMIT::8}
 language: ruby
 rvm:
@@ -26,7 +26,7 @@ notifications:
 sudo: required
 after_success:
 - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-- export REPO=carolina/sample_app_rails_4_image
+- export REPO=$DOCKER_USERNAME/sample_app_rails_4_image
 - docker build -f Dockerfile -t $REPO:$COMMIT .
 - docker tag $REPO:$COMMIT $REPO:latest
 - docker tag $REPO:$COMMIT $REPO:travis-$TRAVIS_BUILD_NUMBER
