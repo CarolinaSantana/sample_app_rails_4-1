@@ -51,8 +51,8 @@ First you need to create an account, unless you already have it.
 
 Then you can use the .travis.yml configuration adding your credentials locally:
 
-    $ travis env set DOCKER_USERNAME *yourusername*
-    $ travis env set DOCKER_PASSWORD *yourpassword*
+    $ travis env set DOCKER_USERNAME yourusername
+    $ travis env set DOCKER_PASSWORD yourpassword
 
 You can also specify the email in which you want to receive failure or success messages about the pull in *recipients*.
 
