@@ -11,4 +11,5 @@ RUN apt-get update && apt-get -y install nodejs && \
     rm -rf /var/lib/apt/lists/* && \
     rm -f /tmp/* /var/tmp/*
 COPY /setup.sh /
-CMD ["puma", "-p", "9292", "&"]
+COPY config/database.yml.postgresql config/database.yml
+CMD ["puma", "-p", "9292"]
