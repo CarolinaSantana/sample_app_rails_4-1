@@ -1,7 +1,5 @@
 env:
   global:
-  - DOCKER_USERNAME=<%= ENV['DOCKER_USERNAME'] %>
-  - DOCKER_PASSWORD=<%= ENV['DOCKER_PASSWORD'] %>
   - COMMIT=${TRAVIS_COMMIT::8}
 language: ruby
 rvm:
