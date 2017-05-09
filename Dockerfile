@@ -11,5 +11,4 @@ RUN apt-get update && apt-get -y install nodejs && \
     rm -rf /var/lib/apt/lists/* && \
     rm -f /tmp/* /var/tmp/* && 
 COPY /setup.sh /
-COPY .secret.example .secret
 
