@@ -13,7 +13,7 @@ echo "PostgreSQL started"
 echo "Creating databases..."
 rake db:create
 
-cp .secret.example .secret
+cp -f .secret.example .secret
 
 echo "Migrating to databases..."
 rake db:migrate
