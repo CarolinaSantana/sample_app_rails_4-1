@@ -7,7 +7,8 @@ LABEL sample_app_rails_4_image.version="0.1" sample_app_rails_4_image.release-da
 MAINTAINER Carolina Santana "c.santanamartel@gmail.com"
 RUN apt-get update && apt-get -y install nodejs && \
     apt-get -y install netcat && \
+    cp .secret.example .secret && \
     apt-get autoclean && apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
-    rm -f /tmp/* /var/tmp/*
+    rm -f /tmp/* /var/tmp/* && 
 COPY /setup.sh /
