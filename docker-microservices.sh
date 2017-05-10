@@ -12,7 +12,7 @@ docker run --name some-postgres -e POSTGRES_USER=$POSTGRES_USER \
 
 docker volume create --name volume-public
 
-docker run -i --name app-job --entrypoint /setup.sh -e POSTGRES_USER=$POSTGRES_USER \
+docker run -i --name app-job --entrypoint ./setup.sh -e POSTGRES_USER=$POSTGRES_USER \
   -e POSTGRES_PASSWORD=$POSTGRES_PASSWORD -w /usr/src/app \
   -v volume-public:/usr/src/app/public --link some-postgres:db sample_app_rails_4_image
 
