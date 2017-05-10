@@ -10,5 +10,4 @@ RUN apt-get update && apt-get -y install nodejs && \
     apt-get autoclean && apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -f /tmp/* /var/tmp/*
-COPY ./.secret.example ./.secret
 
