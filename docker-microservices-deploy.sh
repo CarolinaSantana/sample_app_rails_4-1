@@ -5,10 +5,11 @@ if [ "$POSTGRES_USER" = "" ] || [ "$POSTGRES_PASSWORD" = "" ]; then
         exit
 fi
 
-docker run --name some-postgres -e POSTGRES_USER=$POSTGRES_USER \
-  -e POSTGRES_PASSWORD=$POSTGRES_PASSWORD -d postgres
-
 docker volume create --name volume-public
+
+docker run --name some-postgres -e POSTGRES_USER=$POSTGRES_USER \
+  -e POSTGRES_PASSWORD=$POSTGRES_PASSWORD \
+  -v volume-public:/var/lib/postgresql -d postgres
 
 docker run -i --name app-job --entrypoint ./setup.sh -e POSTGRES_USER=$POSTGRES_USER \
   -e POSTGRES_PASSWORD=$POSTGRES_PASSWORD -w /usr/src/app \
